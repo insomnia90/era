@@ -1,0 +1,16 @@
+{
+    "author": "insomnia90",
+    "name": "era",
+    "description": "REST adapter for express",
+    "version": "0.0.1",
+    "repository": {
+        "url": "https://github.com/insomnia90/era.git"
+    },
+    "main": "",
+    "bin": {
+        "era": ""
+    },
+    "engines": {
+        "node": "*"
+    }
+}
