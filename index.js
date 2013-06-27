@@ -1,5 +1,5 @@
 module.exports = {
-  api: require('./lib/api'),
-  authentication: require('./lib/authentication'),
-  resources: require('./lib/resources')
+  Api: require('./lib/api'),
+  Authentication: require('./lib/authentication'),
+  ModelResource: require('./lib/resources')
 }
