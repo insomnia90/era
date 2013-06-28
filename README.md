@@ -25,7 +25,7 @@ var ModelResource = era.ModelResource;
     
 ```js
 function UserResource (model, authentication) {
-    ModelResource.call(this, model, authentication);
+  ModelResource.call(this, model, authentication);
 }
 util.inherits(UserResource, ModelResource);
 ```
@@ -52,7 +52,6 @@ api.register(new UserResource(models.User, Authentication));
 var express = require('express');
 var app = express();
 
-
 app.use(express.logger());
 app.use(express.compress());
 app.use(express.bodyParser());
@@ -68,24 +67,24 @@ api.adapter(app);
 Here is an example:
 ```js
 function ApiKeyAuth() {
-    Authentication.call(this);
+  Authentication.call(this);
 };
 util.inherits(ApiKeyAuth, Authentication);
 ApiKeyAuth.prototype.isAuthenticated = function (req, res, next) {
-    var apikey = req.query.apikey;
-    if (apikey) {
-        models.User.findOne({'apikey': apikey}).exec(function(err, obj) {
-            if (obj) {
-                next();
-            }
-            else {
-                res.send(401);
-            }
-        });
-    }
-    else {
+  var apikey = req.query.apikey;
+  if (apikey) {
+    models.User.findOne({'apikey': apikey}).exec(function(err, obj) {
+      if (obj) {
+        next();
+      }
+      else {
         res.send(401);
-    }
+      }
+    });
+  }
+  else {
+    res.send(401);
+  }
 }
 ```
 
