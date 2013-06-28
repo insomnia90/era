@@ -50,7 +50,6 @@ var express = require('express');
 var app = express();
 
 
-// Middlewear
 app.use(express.logger());
 app.use(express.compress());
 app.use(express.bodyParser());
