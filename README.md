@@ -62,7 +62,7 @@ api.adapter(app);
 
 ## Authentication
 
-`Authentication` have no rules so you'll have to extend it and implement `isAuthenticated` for settings your own rules.
+`Authentication` have no rules so you'll have to extend it and implement `isAuthenticated` for setting your own rules.
 
 Here is an example:
 ```js
@@ -90,7 +90,7 @@ ApiKeyAuth.prototype.isAuthenticated = function (req, res, next) {
 
 ## Model
 
-The default CRUD behavior of the resource is built on top of [mongoose](http://http://mongoosejs.com/). If you use something else you have to implement your own `get`, `post`, `put` and `delete`.
+The default CRUD behavior of the resource is built on top of [mongoose](http://http://mongoosejs.com/). If you use something else you have to implement `get`, `post`, `put` and `delete` methods of your resource.
 
 
 ## Working with express
