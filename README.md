@@ -9,13 +9,13 @@ REST adapter for express.
 
 ## Quick start
     
-    ```js
-    var era = require('era');
+```js
+var era = require('era');
 
-    var Api = era.Api;
-    var Authentication = era.Authentication;
-    var ModelResource = era.ModelResource;
-    ```
+var Api = era.Api;
+var Authentication = era.Authentication;
+var ModelResource = era.ModelResource;
+```
 
   Create a new resource
     
