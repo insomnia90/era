@@ -2,6 +2,10 @@ era
 =========
 
 REST adapter for [express](http://expressjs.com).
+Current version: 0.0.4
+
+## Important
+  Authentication was disabled in version 0.0.4
 
 ## Installation
 
