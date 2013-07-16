@@ -21,7 +21,7 @@
     "rest",
     "restful",
     "api",
-    "router",
+    "router"
   ],
   "engines": {
       "node": "*"
