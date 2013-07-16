@@ -1,6 +1,6 @@
 {
   "name": "era",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "REST adapter for express",
   "author": "insomnia90",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "web",
     "rest",
     "restful",
-    "api"
+    "api",
+    "router",
   ],
   "engines": {
       "node": "*"

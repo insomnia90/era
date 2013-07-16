@@ -2,10 +2,12 @@ era
 =========
 
 REST adapter for [express](http://expressjs.com).
-Current version: 0.0.4
+  - Current version: 0.0.3
 
 ## Important
-  Authentication was disabled in version 0.0.4
+  - Package under heavy modifications.
+  - Authentication was disabled from version > 0.0.2.
+  - Default behavior
 
 ## Installation
 
@@ -94,7 +96,9 @@ ApiKeyAuth.prototype.isAuthenticated = function (req, res, next) {
 
 ## Model
 
-The default CRUD behavior of the resource is built on top of [mongoose](http://http://mongoosejs.com/). If you use something else you have to implement `get`, `post`, `put` and `delete` methods of your resource.
+The default CRUD behavior of the resource is built on top of [mongoose](http://mongoosejs.com/). If you use 
+something else you have to implement `get`, `post`, `put` and `delete` methods of your resource, so mongoose 
+driver is not a requirement.
 
 
 ## Working with express
